@@ -1,0 +1,24 @@
+import type { NotificationItem } from "@/lib/types";
+
+export const notifications: NotificationItem[] = [
+  { id: "notif-01", kind: "Assignment", title: "Assignment Due Soon", description: "Todo App with React & TypeScript is due in 2 days", read: false, createdAt: "2024-04-13T09:00:00", actionUrl: "/assignments/asg-01" },
+  { id: "notif-02", kind: "Course", title: "New Lesson Available", description: "Module 5: Advanced Hooks & Patterns is now live in React & TypeScript Masterclass", read: false, createdAt: "2024-04-12T14:30:00", actionUrl: "/courses/crs-01/learn" },
+  { id: "notif-03", kind: "Certificate", title: "Certificate Earned!", description: "You've earned the 'Flutter & Dart: Complete Mobile Development' certificate", read: false, createdAt: "2024-04-01T10:00:00", actionUrl: "/certificates/cert-06" },
+  { id: "notif-04", kind: "Announcement", title: "Instructor Announcement", description: "Marcus Johnson posted: 'Office hours moved to Thursday 2PM this week'", read: false, createdAt: "2024-04-11T16:00:00", actionUrl: "/courses/crs-01" },
+  { id: "notif-05", kind: "Recommendation", title: "Recommended for You", description: "Based on your progress, try 'Advanced Deep Learning & Neural Networks'", read: true, createdAt: "2024-04-10T11:00:00", actionUrl: "/courses/crs-03" },
+  { id: "notif-06", kind: "Assignment", title: "Assignment Graded", description: "Your 'Linear Regression from Scratch' scored 98/100", read: true, createdAt: "2024-03-28T15:30:00", actionUrl: "/assignments/asg-04" },
+  { id: "notif-07", kind: "Course", title: "Course Update", description: "New module added to 'Kubernetes & Cloud Native DevOps': Service Mesh with Istio", read: true, createdAt: "2024-03-25T12:00:00", actionUrl: "/courses/crs-07" },
+  { id: "notif-08", kind: "Certificate", title: "Certificate Earned!", description: "You've earned the 'Product-Led Growth: From Zero to Scale' certificate", read: true, createdAt: "2024-04-05T14:00:00", actionUrl: "/certificates/cert-08" },
+  { id: "notif-09", kind: "Announcement", title: "Live Session Tomorrow", description: "Dr. Sarah Chen hosting live Q&A on Transformers at 2PM UTC", read: true, createdAt: "2024-03-20T18:00:00", actionUrl: "/courses/crs-03" },
+  { id: "notif-10", kind: "Recommendation", title: "New Course Match", description: "Based on your interest in AI: 'MLOps: Production Machine Learning'", read: true, createdAt: "2024-03-18T10:00:00", actionUrl: "/courses/crs-10" },
+  { id: "notif-11", kind: "Assignment", title: "Assignment Submitted", description: "Your submission for 'Todo App with React & TypeScript' has been received", read: true, createdAt: "2024-04-10T16:45:00", actionUrl: "/assignments/asg-01" },
+  { id: "notif-12", kind: "Assignment", title: "Assignment Graded", description: "Your 'User Research Plan' scored 88/100", read: true, createdAt: "2024-02-28T14:20:00", actionUrl: "/assignments/asg-06" },
+  { id: "notif-13", kind: "Course", title: "Course Completed!", description: "Congratulations! You completed 'Data Science with Python: Complete Bootcamp'", read: true, createdAt: "2024-02-10T11:00:00", actionUrl: "/certificates/cert-01" },
+  { id: "notif-14", kind: "Announcement", title: "Platform Maintenance", description: "Scheduled maintenance on April 20, 2AM-4AM UTC. Some features may be unavailable.", read: true, createdAt: "2024-04-08T12:00:00" },
+  { id: "notif-15", kind: "Recommendation", title: "Continue Learning", description: "Pick up where you left off in 'Complete React & TypeScript Masterclass' - Module 2", read: false, createdAt: "2024-04-14T08:00:00", actionUrl: "/courses/crs-01/learn" },
+  { id: "notif-16", kind: "Assignment", title: "Assignment Due Soon", description: "Custom Hooks Library is due in 5 days", read: false, createdAt: "2024-04-14T09:00:00", actionUrl: "/assignments/asg-02" },
+  { id: "notif-17", kind: "Course", title: "New Content", description: "New lesson 'Error Boundaries & Suspense' added to React course", read: false, createdAt: "2024-04-14T10:30:00", actionUrl: "/courses/crs-01/learn" },
+  { id: "notif-18", kind: "Announcement", title: "Instructor Office Hours", description: "David Park available for Kubernetes questions Tuesday 4PM", read: false, createdAt: "2024-04-14T11:00:00", actionUrl: "/courses/crs-07" },
+  { id: "notif-19", kind: "Certificate", title: "Certificate Ready for Download", description: "Your 'SEO & Content Strategy Masterclass' certificate is ready", read: true, createdAt: "2024-03-05T15:00:00", actionUrl: "/certificates/cert-04" },
+  { id: "notif-20", kind: "Recommendation", title: "Skill Path Suggestion", description: "Complete the 'Full-Stack Developer' path: 3 courses remaining", read: true, createdAt: "2024-03-01T09:00:00", actionUrl: "/my-learning" },
+];
