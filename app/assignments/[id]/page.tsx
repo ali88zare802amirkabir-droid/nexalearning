@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { use, useState } from "react";
 import { ArrowLeft, Calendar, AlertCircle, Clock, CheckCircle2, FileText, Download, Upload, Star } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -101,8 +101,8 @@ function SubmitView({ assignment, isOverdue, canSubmit, content, setContent, sub
   );
 }
 
-export default async function AssignmentDetailPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
+export default function AssignmentDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = use(params);
   const assignment = assignments.find((a) => a.id === id);
   if (!assignment) notFound();
 

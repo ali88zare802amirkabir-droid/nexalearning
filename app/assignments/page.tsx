@@ -1,14 +1,13 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { Search, Filter, ClipboardList, Calendar, AlertCircle, Plus } from "lucide-react";
+import { Search, Filter, ClipboardList, Calendar, AlertCircle } from "lucide-react";
 import Link from "next/link";
 import { useApp } from "@/lib/store";
 import { assignments } from "@/data/assignments";
 import { courses } from "@/data/courses";
 import { submissions } from "@/data/assignments";
 import { formatDate, getAssignmentStatus, getAssignmentScore } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 import { Select, TextInput } from "@/components/ui/input";
 import { PageHeader } from "@/components/layout/page-header";
 import { Avatar } from "@/components/ui/avatar";
@@ -49,13 +48,6 @@ export default function AssignmentsPage() {
       <PageHeader
         title="Assignments"
         subtitle={`${filtered.length} assignments`}
-        actions={
-          <div className="flex items-center gap-2">
-            <Link href="/assignments/new">
-              <Button size="sm"><Plus className="ms-1.5 size-4" /> Create</Button>
-            </Link>
-          </div>
-        }
       />
 
       <div className="flex flex-wrap items-center gap-3">

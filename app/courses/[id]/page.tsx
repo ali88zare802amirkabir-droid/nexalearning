@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { use, useState, useMemo } from "react";
 import { Star, Users, Clock, Tag, BookOpen, CheckCircle2, Play, ChevronDown, ChevronRight, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -18,8 +18,8 @@ import { PageHeader } from "@/components/layout/page-header";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
-export default async function CourseDetailPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
+export default function CourseDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = use(params);
   const course = courses.find((c) => c.id === id);
   if (!course) notFound();
 

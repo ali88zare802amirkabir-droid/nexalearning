@@ -1,9 +1,6 @@
-"use client";
-
 import { Star, Users, GraduationCap, Calendar, Award, ArrowLeft, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { useApp } from "@/lib/store";
 import { instructors } from "@/data/instructors";
 import { courses } from "@/data/courses";
 import { formatMoney, formatDate } from "@/lib/utils";

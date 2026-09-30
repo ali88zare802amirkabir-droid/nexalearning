@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { use, useState, useEffect, useMemo } from "react";
 import { Play, Pause, ChevronLeft, ChevronRight, CheckCircle2, Volume2, VolumeX, Maximize, Minimize, BookOpen, Clock, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -16,9 +16,9 @@ import { Badge } from "@/components/ui/badge";
 import { PageHeader } from "@/components/layout/page-header";
 import { cn } from "@/lib/utils";
 
-export default async function LearnPage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ lesson?: string }> }) {
-  const { id } = await params;
-  const resolvedSearchParams = await searchParams;
+export default function LearnPage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ lesson?: string }> }) {
+  const { id } = use(params);
+  const resolvedSearchParams = use(searchParams);
   const lessonId = resolvedSearchParams.lesson;
 
   const course = courses.find((c) => c.id === id);
